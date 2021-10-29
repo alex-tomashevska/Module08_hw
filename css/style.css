@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container {
+    margin: 0 auto;
+    max-width: 320px;
+    text-align: center;
+}
+.header {
+    background: url("../img/img1.png") no-repeat top center / cover;
+    padding-bottom: 9rem;
+}
+.nav {
+    padding-top: 19px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.logo {
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color:#8c8c8c;
+    padding-top: 7rem;
+}
+
+.log_in, .sign_up {
+    text-decoration: none;
+    color:#8c8c8c;
+    padding: 4px 10px;
+}
+.log_in:hover{
+    border: 1px solid #8c8c8c;
+    border-radius: 1rem;
+}
+.sign_up:hover {
+    border: 1px solid #8c8c8c;
+    border-radius: 1rem;
+}
+.titles {
+    margin-top: 40px;
+    color: #8c8c8c;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.title {
+    padding-top: 19px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.button {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #FF4E50;
+    width: 280px;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+}
+.section {
+    margin-top: 4.3rem;
+}
+.section_title {
+    font-size: 22px;
+    color: #333333;
+}
+.partner {
+    margin: 20px 15px;
+    position: relative;
+}
+.photo {
+    border-radius: 100%;
+}
+.icon_img1, .icon_img2, .icon_img3, .icon_img4 {
+    width: 45px;
+    height: 45px;
+    background-color: #FF4E50;
+    position: absolute;
+    left: 63%;
+    top: 36%;
+    border: 5px solid #ffffff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_img2 {
+    background-color: #1CD7AD;
+}
+.icon_img3 {
+    background-color: #FFA507;
+}
+.icon_img4 {
+    background-color: #4E73DB;
+}
+.partner_name {
+    padding-top: 15px;
+    font-size: 14px;
+}
+.about_partner {
+    padding-top: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+.button_partners {
+    margin-top: 35px;
+    display: inline-block;
+    color: #FF4E50;
+    border: 2px solid #FF4E50;
+    border-radius: 20px;
+    padding: 10px 50px;
+    text-decoration: none
+}
+
+@media (min-width: 760px) {
+    .container {
+        min-width: 660px;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo {
+        padding: 0;
+        margin: 0;
+    }
+    .titles {
+        margin-top: 70px;
+    }
+    .holiday_partners {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .partner {
+        width: 40%;
+    }
+}
+@media (min-width: 1100px) {
+    .container {
+        min-width: 900px;
+    }
+
+    .holiday_partners {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
